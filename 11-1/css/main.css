@@ -1,0 +1,329 @@
+/* Author: Daniel Rodriguez */
+/* Date: 1/29/2022 */
+
+html
+{
+    background-color: white;
+}
+
+
+
+body
+{
+    background-color: #fffded;
+    width: 98%;
+    margin: 0 auto 0 auto;
+    border: 3px solid #931420;
+    max-width: 960px;
+}
+
+main
+{
+    padding: 0 20 20 20;
+}
+
+section main
+{
+    width: 54%;
+    float: right;
+}
+
+.aside
+{
+    width: 22%;
+    float: none;
+    padding: 5% 10%;
+}
+
+.aside h3
+{
+    font-size: 105%;
+    padding: 0 0 2.5% 0;
+}
+
+.aside img
+{
+    padding-bottom: 1em;
+}
+
+#dinosaur
+{
+    max-width: 40%;
+    min-width: 150px;
+}
+
+.shadow
+{
+    text-shadow: 2px 2px 2px #800000;
+    
+}
+
+h1
+{
+    font-size: 150%;
+}
+
+header
+{
+    padding: 1.5em 0 1.5em 0;
+    border-bottom: 3px solid#800000;
+    background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header h2
+{
+    color: #800000;
+    font-size: 170%
+}
+
+header h3
+{
+    font-style: italic;
+    margin-right: 30px;
+}
+
+header img
+{
+    float: left;
+    margin-left: 3%;
+    margin-right: 5%;
+}
+
+main a
+{
+    margin: 10px 0 10px 0;
+}
+
+main h1
+{
+    font-size: 150%;
+	border: 3px double #800000;
+	margin: 0 20px 0 20px;
+	border-radius: 20px;
+	box-shadow: 5px 5px;
+	background-color: white;
+}
+
+main h2
+{
+    font-size: 130%;
+    color: #800000;
+    padding: 0 0.5em 0 0.25em;
+}
+
+main h3
+{
+    font-size: 105%;
+}
+
+main img
+{
+    padding: 0 0 0 1em;
+    float: right;
+}
+
+main p
+{
+    padding: 0 0 0 0.5em;
+}
+
+main .quote
+{
+    padding: 0 2em 0 2em;
+    
+}
+
+main ul
+{
+    padding: 0 1.25em, 0 0.25em;
+}
+
+main li
+{
+    padding: 0 0 0.35em 0;
+}
+
+a:focus
+{
+    font-style: italic;
+}
+
+a:hover
+{
+    font-style: italic;
+}
+
+
+.mission-statement
+{
+    margin: 0 auto 0 auto;
+}
+
+
+.quote
+{
+    margin: 0 0 0 5%;
+}
+
+footer 
+{
+    clear: right;
+    color: white;
+    padding: 1em;
+    background-color: #800000;
+    text-align: center;
+}
+
+nav
+{
+    position: relative;
+}
+
+nav ul
+{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav li
+{
+    float: left;
+    background-color: #800000; 
+    width: 20%;
+    padding: 1em 0 1em 0;
+}
+
+nav a
+{
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.current
+{
+    color: yellow;
+}
+
+.submenu
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li
+{
+    float: none;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.submenu ul::after
+{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.submenu-tab:hover .submenu
+{
+    display: block;
+}
+
+main hr
+{
+    height: 3px;
+    background-color: #800000;
+}
+
+#mobile_menu {
+	display: none;
+}
+
+
+@media only screen and (max-width: 959px)
+{
+    section h1
+    {
+        font-size: 135%;
+    }
+
+    .aside h2
+    {
+        font-size: 120%;
+    }
+
+    section h2
+    {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    header img
+    {
+        float: none;
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+    .aside
+    {
+        float: none;
+		padding: 0 2.5 0 2.5%;
+		width: 95%;   
+    }
+    section main
+    {
+        float: none;
+        width: 95%;  
+    }
+
+    #dinosaur
+    {
+        width: 30%;
+    }
+
+    .speakers-div
+    {
+		column-count: 2;
+    }
+
+    #nav_menu {
+		display: none;
+	}
+
+	#mobile_menu {
+		display: block;
+	}
+
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+
+    nav li
+    {
+        float: left;
+        background-color: #800000; 
+        width: 100%;
+        padding: 1em 0 1em 0;
+    }
+
+    .submenu
+    {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 479px)
+{
+    html
+    { 
+        font-size: 90%; 
+    }
+}
